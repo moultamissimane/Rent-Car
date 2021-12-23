@@ -1,0 +1,480 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ 
+
+li, a, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    
+}
+
+header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    transition: all 300ms;
+    z-index: 100;
+}
+
+.logo{
+    width: 10%;
+    margin-bottom: 2px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.nav_links{
+    list-style: none;
+}
+
+.nav_links li {
+   display: inline-block;
+   padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    
+}
+
+.nav_links li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 20px;
+    background-color: rgb(0, 87, 169);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+.bg-black{
+    background-color: #3d3636e8;
+    
+}
+
+
+/*footer*/
+
+
+footer {
+   width: 100%;
+   background: linear-gradient(to right, #0088a9, #000000);
+   color: #fff;
+   padding: 100px 0 30px;
+   line-height: 25px;
+   font-family: poppins;
+}
+
+.row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+
+}
+
+
+.col h3{
+    width: 80px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.email-id{
+    width: fit-content;
+    border-bottom: 1px solid rgb(0, 87, 169);
+    margin: 20px 0;
+}
+
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+form{
+     padding-bottom: 15px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: auto;
+}
+
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fas{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer; 
+}
+
+
+.copyright{
+    text-align: center;
+}
+
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #0808085e;
+    border-radius: 3px;
+    position: absolute;
+    top: 36px;
+    overflow: hidden;
+}
+
+
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #0088a9;
+    border-radius: 3px;
+    position: absolute;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+
+
+/*body content*/
+
+.rowC{
+    width: 100%;
+    height: 775px;
+    background-image: url('/assets/images/TeslaHomePage.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    margin-left: 30%;
+}
+
+
+.col-2 h3{
+    color: white;
+    font-size: 2.5rem;
+    font-family: poppins;
+    left: 33%;
+    position: absolute;
+    top: 25%;
+    
+}
+
+.col-2 p{
+    color: white;
+    font-family: poppins;
+    font-size: 0.7rem;
+    margin: 0.1rem ;
+    top: 32%;
+    left: 37%;
+    position: absolute;
+}
+
+ .car_search_form {
+    background: none;
+    padding: 0.6rem;
+    
+    
+}
+
+
+.btn{
+    display: inline-block;
+    background:rgb(0, 87, 169);
+    color: rgb(255, 255, 255);
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    font-family: poppins;
+}
+
+.btn:hover{
+    background: #0088a9;
+    font-family: poppins;
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.search{
+    margin: auto;
+    width: 50%;
+    background-color: #0087a928;
+    display: inline-block;
+    backdrop-filter: blur(12px);
+    border-radius: 1rem;
+}
+
+#brand{
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+    height: 45px;
+    font-family: poppins;
+    font-size: 0.8rem;
+}
+
+#type{
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+    height: 45px;
+    font-family: poppins;
+    font-size: 0.8rem;
+}
+
+#sort_by{
+    border: none;
+    border-radius: 5px;
+    width: 170px;
+    height: 45px;
+    font-family: poppins;
+    font-size: 0.8rem;
+}
+
+.WhyChooseUs{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 3%;
+    background-color: #0088a9;
+}
+
+.WhyChooseUs h1{
+    color: #ffffff;
+    font-family: poppins;
+    font-size: 2rem;
+    padding-bottom: 0.5%;
+}
+
+.WhyChooseUs p{
+    color: #ffffffa4;
+    font-family: poppins;
+    font-size: 1rem;
+    
+}
+
+
+.rowW{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.choose_col {
+    padding-right: 50%;
+    color: rgb(255, 255, 255);
+    font-family: poppins;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    flex-basis: 31%;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+}
+
+.rowF {
+    display: flex;
+    justify-content: space-between;
+}
+
+.facilities{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+
+}
+
+.facilities h2{
+    font-family: poppins;
+    font-size: 2rem;
+    padding-bottom: 1%;
+    color: #0088a9;
+}
+
+.img_wrapper{
+    width: 100%;
+    height: fit-content;
+    object-fit: cover;
+}
+
+.facilities p{
+    font-family: poppins;
+    font-size: 1rem;
+    padding-bottom: 2%;
+    color: #5e7e86d0;
+}
+
+
+.facilities_col{
+    border-radius: 10px;
+    margin-bottom: 5%;
+    flex-basis: 31%;
+}
+
+.facilities_col img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.facilities_col p{
+    padding: 0;
+    font-size: 1rem;
+    padding-bottom: 2%;
+}
+
+.facilities_col h2{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    right: 1rem;
+}
+
+.facilities_col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    font-family: poppins;
+    font-size: 1.1rem;
+}
+
+.page_content_wrapper h2{
+    width: 100%;
+    text-align: center;
+    padding: 60px 0 60px 0;
+    color: #ffffff;
+    padding: 30px 0 30px 0;
+    margin: auto;
+    background-color: rgb(0, 87, 169);
+}
+.page_content_wrapper p{
+    width: 100%;
+    text-align: center;
+    padding: 60px 0 60px 0;
+    color: #ffffff;
+    padding: 30px 0 30px 0;
+    margin: auto;
+    background-color: rgb(0, 87, 169);
+}
+.page_content_wrapper i{
+    width: 31.35px;
+    height: 27.35px;
+    
+    background-color: rgb(0, 87, 169);
+
+}
+
+
+
+
+
+
+
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    
+    100%{
+        left: 100%;
+    }
+}
+
+@media  (max-width:800px){
+    footer{
+        bottom:unset;
+    }
+    
+}
+
+@media (max-width: 800px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+@media only screen and(max-width: 800px) {
+   .WhyChooseUs {
+        padding: 5%;
+        overflow: hidden;
+}
+    .standard_wrapper{
+        width: 100%;
+        padding: 0 10%;
+    }
+}    
