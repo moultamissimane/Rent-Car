@@ -26,14 +26,19 @@
         <img class="logo" src="/assets/images/5a2ae8b7db68181c8f184d78.png" alt="logo rent car">
         <nav>
             <ul class="nav_links">
-                <li><a href="#">HOME</a></li>
+                <li><a href="index.html">HOME</a></li>
                 <li><a href="#">RESERVATION</a></li>
                 <li><a href="#">GALLERY</a></li>
+                <li id="contact"><a  href="contact.html">Contact</a></li>
+                <i id="times_menu" class="fas fa-times"></i>
             </ul>
         </nav>
-        <a class="cta" href="#">
+        <a class="cta" href="contact.html">
             <button>CONTACT</button>
         </a>
+        <div class="menu_icon">
+            <i class="fas fa-bars"></i>
+        </div>
     </header>
     <!-- end header-->
 
@@ -42,55 +47,15 @@
             <div class="left"></div>
             <div class="right">
                 <h2>Contact Us</h2>
-                <input type="text" class="field" placeholder="Your Name">
-                <input type="email" class="field" placeholder="Your Email">
-                <input type="text" class="field" placeholder="Your Name">
-                <textarea  class="field area" placeholder="Message"></textarea>
+                <input type="text" class="field" id="fname" placeholder="Your FirstName">
+                <input type="text" class="field" id="lname" placeholder="Your LastName">
+                <input type="email" class="field" id="mail" placeholder="Your Email">
+                <textarea  class="field area" id="message" placeholder="Message"></textarea>
                 <button class="btn">Send</button>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
     <footer>
         <div class="row">
             <div class="col">
@@ -102,11 +67,9 @@
             <div class="col">
                 <h3>Office <div class="underline"><span></span></div>
                 </h3>
-                <p>ITPL Road</p>
-                <p>Whitefield, Bangalore</p>
-                <p>Karnataka, PIN 5600006, Morocco</p>
-                <p class="email-id">amoultamissimane01@gmail.com</p>
-                <h4>+91 - 012344555</h4>
+                <p>Casablanca, 560006, Morocco</p>
+                <p class="email-id">carrental@gmail.com</p>
+                <h4>0522198767</h4>
             </div>
             <div class="col">
                 <h3>Links <div class="underline"><span></span></div>
@@ -125,7 +88,6 @@
                     <i class="far fa-envelope"></i>
                     <input type="email" placeholder="Enter your email" required>
                     <button type="submit"><i class="fas fa-arrow-right"></i>
-
                     </button>
                 </form>
                 <div class="social-icons">
@@ -136,15 +98,8 @@
                 </div>
             </div>
         </div>
-        <p class="copyright">©2021-All Rights Reserved</p>
+        <p class="copyright">© 2021-All Rights Reserved</p>
     </footer>
-
-
-
-
-
-
-
 </body>
 
 
@@ -155,6 +110,23 @@
         } else {
             document.querySelector('header').classList.remove('bg-black')
         }
+    })
+
+    
+    let fname = document.getElementById('fname');
+    let lname = document.getElementById('lname');
+    let mail = document.getElementById('mail');
+    let message = document.getElementById('message');
+
+    document.querySelector(".btn").addEventListener('click',()=>{
+        alert("FirstName: "+fname.value +" LastName: "+lname.value + " Mail:"+mail.value + "Message: " +message.value);
+    })
+    document.querySelector('#times_menu').addEventListener('click',()=>{
+        document.querySelector('.nav_links').classList.remove('navbar_responsive');
+    })
+    
+    document.querySelector('.menu_icon').addEventListener('click',()=>{
+        document.querySelector('.nav_links').classList.add('navbar_responsive');
     })
 
 

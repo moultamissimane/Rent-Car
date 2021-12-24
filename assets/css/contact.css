@@ -7,6 +7,7 @@
 body{
     width: 100%;
     height: 100vh;
+    background-color: black;
 }
 
 /*Header*/
@@ -115,6 +116,8 @@ button:hover {
     height: 100%;
     background: url("/assets/images/MercedesContact.jpg") no-repeat center;
     background-size: cover;
+    position: relative;
+  
 }
 
 .right{
@@ -312,17 +315,56 @@ form button .fas{
     }
 }
 
-@media  (max-width:700px){
+@media (max-width:800px){
     footer{
         bottom:unset;
     }
     
 }
-@media screen and (max-width:880px){
+@media (max-width:800px){
     .contact-box{
         grid-template-columns: 1fr;
     }
     .left{
         height: 200px;
+    }
+    .logo{
+        width: 50%;
+        margin-bottom: 2px;
+        cursor: pointer;
+        margin-left: 0.5rem;
+    }
+    .nav_links{
+        display: none;
+    }
+    .navbar_responsive{
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.925);
+        position: fixed;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        gap: 4rem;
+        top: 0;
+        left: 0;
+        display: flex;
+    }
+
+    #times_menu{
+        display: block;
+    }
+
+    .menu_icon{
+        display: block;
+    }
+
+
+}
+
+@media (max-width: 600px){
+    .button {
+        display:none;
     }
 }

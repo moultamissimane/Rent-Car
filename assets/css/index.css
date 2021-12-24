@@ -205,7 +205,7 @@ form button .fas{
 .rowC{
     width: 100%;
     height: 775px;
-    background-image: url('/assets/images/TeslaHomePage.jpg');
+    background-image: url('/assets/images/Web\ 1920\ –\ 1.jpg');
     background-position: center;
     background-size: cover;
     display: flex;
@@ -213,24 +213,23 @@ form button .fas{
     align-items: center;
 }
 
-.col-2{
+.title{
     flex-basis: 50%;
     min-width: 300px;
     margin-left: 30%;
 }
 
 
-.col-2 h3{
+.title h3{
     color: white;
     font-size: 2.5rem;
     font-family: poppins;
     left: 33%;
     position: absolute;
     top: 25%;
-    
 }
 
-.col-2 p{
+.title p{
     color: white;
     font-family: poppins;
     font-size: 0.7rem;
@@ -241,10 +240,18 @@ form button .fas{
 }
 
  .car_search_form {
+     width: 100%;
     background: none;
     padding: 0.6rem;
-    
-    
+}
+
+.car_search_form select{
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 45px;
+    font-family: poppins;
+    font-size: 0.8rem;
 }
 
 
@@ -276,36 +283,9 @@ form button .fas{
     margin: auto;
     width: 50%;
     background-color: #0087a928;
-    display: inline-block;
+    display: flex;
     backdrop-filter: blur(12px);
     border-radius: 1rem;
-}
-
-#brand{
-    border: none;
-    border-radius: 5px;
-    width: 170px;
-    height: 45px;
-    font-family: poppins;
-    font-size: 0.8rem;
-}
-
-#type{
-    border: none;
-    border-radius: 5px;
-    width: 170px;
-    height: 45px;
-    font-family: poppins;
-    font-size: 0.8rem;
-}
-
-#sort_by{
-    border: none;
-    border-radius: 5px;
-    width: 170px;
-    height: 45px;
-    font-family: poppins;
-    font-size: 0.8rem;
 }
 
 .WhyChooseUs{
@@ -439,8 +419,30 @@ form button .fas{
 
 }
 
+.menu{
+    padding: 10px;
+    font-size: large;
+    color: rgb(0, 87, 169);
+}
 
 
+
+
+#contact{
+    display: none;
+}
+
+.menu_icon{
+    display: none;
+}
+
+
+#times_menu{
+    color: whitesmoke;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
 
 
 
@@ -455,26 +457,96 @@ form button .fas{
     }
 }
 
-@media  (max-width:800px){
+#times_menu{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    .WhyChooseUs {
+        padding: 5%;
+        overflow: hidden;
+    }
+
+    .logo{
+        width: 50%;
+        margin-bottom: 2px;
+        cursor: pointer;
+        margin-left: 0.5rem;
+    }
+    .title h3{
+        color: white;
+        font-size: 1.4rem;
+        font-family: poppins;
+        left: 10%;
+        position: absolute;
+        top: 15%;
+    }
+
+    .menu_icon{
+        display: block;
+    }
+
+    #contact{
+        display: block;
+    }
+
+    .rowW{
+        flex-direction: column;
+    }
+
     footer{
         bottom:unset;
     }
-    
-}
-
-@media (max-width: 800px){
     .row{
         flex-direction: column;
     }
-}
-
-@media only screen and(max-width: 800px) {
-   .WhyChooseUs {
-        padding: 5%;
-        overflow: hidden;
-}
     .standard_wrapper{
         width: 100%;
         padding: 0 10%;
     }
+    .search{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .facilities_col{
+        width: 80vw;
+    }
+
+    .cta{
+        display: none;
+    }
+    
+    .rowF{
+        flex-direction: column;
+    }
+
+    .car_search_form{
+        justify-content: space-between;
+        gap: 1rem;
+        flex-direction: column;
+    }
+
+    .nav_links{
+        display: none;
+    }
+    .navbar_responsive{
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.925);
+        position: fixed;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        gap: 4rem;
+        top: 0;
+        left: 0;
+        display: flex;
+    }
+
+    #times_menu{
+        display: block;
+    }
+    
 }    
