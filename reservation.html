@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/reservation.css">
+    <link rel="stylesheet" href="/assets/css/resevationform.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+
+    <title>RESERVATION</title>
+</head>
+
+<body>
+    <!-- header-->
+    <header class="header"></header>
+    <!-- end header-->
+
+    <div class="content_wrapper">
+        <h1>RESERVATION</h1>
+        <div class="form_type">
+            <h3>Choose Type</h3>
+            <div class="form_inside_wrapper">
+                <label class="form_inside_type" for="moto">
+                    <input type="radio" name="type" id="moto" value="moto">
+                    <span>Moto</span>
+                </label>
+                <label class="form_inside_type" for="citadine">
+                    <input type="radio" name="type" id="citadine" value="citadine">
+                    <span>Citadine</span>
+                </label>
+                <label class="form_inside_type" for="compact">
+                    <input type="radio" name="type" id="compact" value="compact">
+                    <span>Compact</span>
+                </label>
+                <label class="form_inside_type" for="berline">
+                    <input type="radio" name="type" id="berline" value="berline">
+                    <span>Berline</span>
+                </label>
+                <label class="form_inside_type" for="utilitaire">
+                    <input type="radio" name="type" id="utilitaire" value="utilitaire">
+                    <span>Utilitaire</span>
+                </label>
+                <label class="form_inside_type" for="constructionMachine">
+                    <input type="radio" name="type" id="constructionMachine" value="constructionMachine">
+                    <span>Construction Machine</span>
+                </label>
+                <label class="form_inside_type" for="camion">
+                    <input type="radio" name="type" id="camion" value="camion">
+                    <span>Camion</span>
+                </label>
+            </div>
+            <div class="form_type">
+                <h3>Choose Carburant</h3>
+                <div class="form_inside_wrapper">
+
+                    <label class="form_inside_type" for="electric">
+                        <input type="radio" name="carburant" id="electric" value="electric">
+                        <span>Electric</span>
+                    </label>
+                    <label class="form_inside_type" for="hybrid">
+                        <input type="radio" name="carburant" id="hybrid" value="hybrid">
+                        <span>Hybrid</span>
+                    </label>
+                    <label class="form_inside_type" for="essence">
+                        <input type="radio" name="carburant" id="essence" value="essence">
+                        <span>Essence</span>
+                    </label>
+                    <label class="form_inside_type" for="diesel">
+                        <input type="radio" name="carburant" id="diesel" value="diesel">
+                        <span>Diesel</span>
+                    </label>
+                </div>
+            </div>
+            <div class="form_type form_transmition">
+                <h3>Choose Transmition</h3>
+                <div class="form_inside_wrapper">
+                    <label class="form_inside_type " for="manuel">
+                        <input type="radio" name="transmition" id="manuel" value="manuel">
+                        <span>Manuel</span>
+                    </label>
+                    <label class="form_inside_type " for="auto">
+                        <input type="radio" name="transmition" id="auto" value="auto">
+                        <span>Auto</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form_type">
+            <h3>Choose Number Of days</h3>
+            <div class="form_inside_wrapper">
+                <div class="form_inside_type">
+                    <input type="number" id="days" min="1" value="1" max="30">
+                    <label style="color: black;" for="days">days</label>
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%; display: flex; flex-direction: column-reverse; align-items: end;">
+            <button onclick="hundleCalculation()">Calculate Now</button>
+            <h3 id="calculated"  style="font-size: 38px; font-family: poppins; color: white;">0 $</h3>
+        </div>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col">
+                <p>Welcome to our website where you can
+                    find the cheapest car you need to drive today!</p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div>
+                </h3>
+                <p>Casablanca, 560006, Morocco</p>
+                <p class="email-id">carrental@gmail.com</p>
+                <h4>0522198767</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="reservation.html">RESERVATION</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>NewsLetter<div class="underline"><span></span></div>
+                </h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i>
+
+                    </button>
+                </form>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2021-All Rights Reserved</p>
+    </footer>
+    <!-- end footer -->
+    <script>
+        document.addEventListener('scroll', () => {
+            if (window.pageYOffset > 0) {
+                document.querySelector('header').classList.add('bg-black')
+                document.querySelector('.menu').style.color = "white"
+            } else {
+                document.querySelector('header').classList.remove('bg-black')
+                document.querySelector('.menu').style.color = "rgb(0, 87, 169)"
+            }
+        })
+
+        //display transmition inputs
+        const transmition = (type) => {
+            document.querySelector('.form_transmition').style.display = type == 'moto' ? 'none' : 'block'
+        }
+
+        //viewCarburants
+        const hundleView = (carburant, transmitionType, ismoto) => {
+
+            //display transmition inputs
+            transmition(ismoto ? 'moto' : null)
+
+            //display carburant
+            let carb = Array.from(document.querySelectorAll("input[name='carburant']")).reverse()
+            carb.forEach(e => {
+                if (carburant?.includes(e.value)) {
+                    e.parentElement.style.display = 'none'
+                } else {
+                    e.checked = true
+                    e.parentElement.style.display = 'block'
+                }
+            })
+
+            //display transmition
+            document.getElementsByName('transmition').forEach(e => {
+                if (transmitionType?.includes(e.value)) {
+                    e.parentElement.style.display = 'none'
+                } else {
+                    e.checked = true
+                    e.parentElement.style.display = 'block'
+                }
+            })
+        }
+        // moto
+
+        document.getElementsByName('type').forEach(e => {
+            e.addEventListener('change', (e) => {
+                if (e.target.value == 'moto') {
+                    hundleView(['hybrid', "diesel"], [], true)
+                } else if (e.target.value == 'citadine') {
+                    hundleView([], ["auto"])
+                } else if (e.target.value == 'berline') {
+                    hundleView(["electric"], ["manuel"])
+                } else if (e.target.value == 'compact') {
+                    hundleView(["electric"], ["auto"])
+                } else if (e.target.value == 'utilitaire') {
+                    hundleView(["electric", 'hybrid', "essence"], ["auto"])
+                } else if (e.target.value == 'constructionMachine') {
+                    hundleView(["electric", 'hybrid'], ["auto"])
+                } else if (e.target.value == 'camion') {
+                    hundleView(["electric", 'hybrid', "essence"], ["manuel"])
+                }
+            })
+        })
+
+        const hundleCalculation = () => {
+
+            let typeChecked = 0;//10
+            let carbChecked = 0;//5
+            let transmitionChecked = 0;
+            let days = document.querySelector('#days').value
+
+            let transmitions = {
+                manuel: 0,
+                automatic: 19,
+            }
+
+            let prices =
+            {
+                moto: 10,
+                citadine: 12,
+                compact: 14,
+                berline: 20,
+                utilitaire: 16,
+                constructionMachine: 900,
+                camion: 250
+            }
+
+            let carburant = {
+                electric: 5, hybrid: 9, essence: 14, diesel: 21
+            }
+            let isChecked
+            // get type for moto
+            document.getElementsByName('type').forEach(e => {
+                e.checked == true ? isChecked = e.value : null
+                
+            })
+            typeChecked = prices[isChecked]
+            // get carb for moto
+
+            document.getElementsByName('carburant').forEach(e => {
+                e.checked == true ? isChecked = e.value : null
+            })
+            carbChecked = carburant[isChecked]
+
+            document.querySelector('#calculated').innerHTML = (typeChecked * days) + (carbChecked * (typeChecked * days) / 100) + transmitionChecked + ' $'
+        }
+
+
+    </script>
+    <script src="./assets/components/header.js"></script>
+</body>
+
+
+</html>

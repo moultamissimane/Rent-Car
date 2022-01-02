@@ -5,20 +5,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/gallery.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
+    <title>GALLERY</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
-    <h1 id="brand">brand: </h1>
+        <!-- header-->
+    <header class="header"></header>
+    <!-- end header-->
 
-    <script>
-        const urlSearchParams = new URLSearchParams(window.location.search);
-        const params = Object.fromEntries(urlSearchParams.entries());
-        console.log(params.brand);
-        document.querySelector('#brand').innerHTML += params.brand
+        <!--webpage content-->
+        <div class="gallery_handler">
+            <h3>GALLERY</h3>
+        </div>
+        <div class="carsWrapper">
+        </div>
 
+        <!--end webpage content-->
 
-    </script>
+        <!-- footer -->
+
+    <footer>
+        <div class="row">
+            <div class="col">
+                <p>Welcome to our website where you can 
+                    find the cheapest car you need to drive today!</p>
+            </div>
+            <div class="col">
+                <h3>Office <div class="underline"><span></span></div>
+                </h3>
+                <p>Casablanca, 560006, Morocco</p>
+                <p class="email-id">carrental@gmail.com</p>
+                <h4>0522198767</h4>
+            </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="reservation.html">RESERVATION</a></li>
+                </ul>
+            </div>
+            <div class="col">
+                <h3>NewsLetter<div class="underline"><span></span></div>
+                </h3>
+                <form>
+                    <i class="far fa-envelope"></i>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i>
+
+                    </button>
+                </form>
+                <div class="social-icons">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <p class="copyright">© 2021-All Rights Reserved</p>
+    </footer>
+    <!-- end footer -->
 </body>
+<script>
+    document.addEventListener('scroll', () => {
+        if (window.pageYOffset > 0) {
+            document.querySelector('header').classList.add('bg-black')
+            document.querySelector('.menu').style.color = "white"
+        } else {
+            document.querySelector('header').classList.remove('bg-black')
+            document.querySelector('.menu').style.color = "rgb(0, 87, 169)"
+        }
+    })
+
+
+</script>
+<script src="./assets/js/cars.js"></script>
+<script src="./assets/components/header.js"></script>
+
 
 </html>

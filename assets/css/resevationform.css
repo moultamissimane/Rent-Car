@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+.content_wrapper{
+    margin-top: 150px;
+    width: 80%;
+    height: fit-content;
+    padding: 2rem;
+    border-radius: 25px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    --webkit-backdrop-filter: blur(30px);
+    background-color: rgba(255, 255, 255, 0.15);
+    color: whitesmoke;
+}
+
+h1 h2 h3 h4 h5 h6 p {
+    font-family: poppins;
+}
+
+.form_inside_wrapper{
+   display: flex; 
+   gap: 2rem;
+   flex-wrap: wrap;
+   margin-top: 1.5rem;
+   margin-bottom: 1.5rem;
+}
+
+.content_wrapper{
+    margin-top: 15%;
+}
+.content_wrapper h1{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    font-family: poppins;
+    font-size: 1.5rem;
+    color: #0088a9;
+    text-shadow: rgb(0, 0, 0);
+}
+
+.form_inside_type{
+    border-radius: 20px;
+    background: #fff;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+.form_inside_type:hover {
+    background-color: rgb(194, 235, 245);
+}
+
+.form_inside_type span{
+    color: black;
+    font-family: poppins;
+}
+
+#days{
+    max-width: 4ch;
+}
+
+.form_type{
+    font-family: poppins;
+    font-size: 1rem;
+}

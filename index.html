@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/header.css">
     <script src="https://kit.fontawesome.com/c4254e24a8.js"></script>
 
     <title>CarRentalAgency</title>
@@ -18,32 +19,14 @@
 
 <body>
     <!-- header-->
-    <header>
-        <img class="logo" src="/assets/images/5a2ae8b7db68181c8f184d78.png" alt="logo rent car">
-        <nav>
-            <ul class="nav_links">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="#">RESERVATION</a></li>
-                <li><a href="#">GALLERY</a></li>
-                <li id="contact"><a  href="contact.html">Contact</a></li>
-                <i id="times_menu" class="fas fa-times"></i>
-            </ul>
-        </nav>
-        <a class="cta" href="contact.html">
-            <button>CONTACT</button>
-        </a>
-        <div class="menu_icon">
-            <i class="fas fa-bars"></i>
-        </div>
-    </header>
+    <header class="header"></header>
     <!-- end header-->
-
     <!--webpage content-->
     <div class="rowC">
         <div class="body">
             <div class="title">
-                <h3>Find Best Car & tracks</h3>
-                <p>From as low as 10$ per day with limited time offer discounts</p>
+                <h3>Find Best Car & trucks</h3>
+                <p id="title_p">From as low as 20$ per day with limited time offer discounts</p>
             </div>
             <div class="search">
                 <form class="car_search_form" action="gallery.html" method="get">
@@ -51,50 +34,39 @@
                         <option value="">Any Brand</option>
                         <option value="Audi">Audi</option>
                         <option value="BMW">BMW</option>
-                        <option value="Lexus">Lexus</option>
+                        <option value="Lexus">Tesla</option>
                         <option value="Mercedes Benz">Mercedes Benz</option>
                         <option value="MINI">MINI</option>
                         <option value="Porsche">Porsche</option>
+                        <option value="Other">GAT</option>
                         <option value="Other">Other</option>
                     </select>
                     <span class="ti-angle-down"></span>
-
-
                     <select id="type" name="type">
                         <option value="">Any Type</option>
-                        <option value="Coupe">Coupe</option>
-                        <option value="Sedan">Sedan</option>
-                        <option value="SUV">SUV</option>
-                        <option value="SportsCars">SportsCars</option>
-                        <option value="MiniVan">MiniVan</option>
+                        <option value="Coupe">Truck</option>
+                        <option value="Sedan">Moto</option>
+                        <option value="SUV">citadine</option>
+                        <option value="SportsCars">compact</option>
+                        <option value="MiniVan">Utilitaire</option>
+                        <option value="MiniVan">Construction Machine</option>
+                        <option value="MiniVan">Berline</option>
                     </select>
                     <span class="ti-angle-down"></span>
-
-
-
-                    <select id="sort_by" name="sort_by">
-                        <option value="price_low">Price Low to High</option>
-                        <option value="price_high">Price High to Low</option>
-                        <option value="model">Sort By Model</option>
-                        <option value="popular">Sort By Popularity</option>
-                        <option value="review">Sort By Review Score</option>
-                    </select>
                     <span class="ti-exchange-vertical"></span>
-
                     <button type="submit" class="btn">Search</button>
-
                 </form>
             </div>
         </div>
     </div>
     <section class="WhyChooseUs">
         <h1>Why Choose Us</h1>
-        <p>Explore our car retal services</p>
+        <p>Explore our retal car services</p>
         <div class="rowW">
             <div class="choose_col">
                 <i class="fas fa-car"></i>
                 <h4>Variety Of Car Brands</h4>
-                <p>Lorem ipsum dolor sit amet, consectadipiscing elit. Aenean commodo ligula eget dolor.</p>
+                <p>Tesla is now available in Rentcar.com! So what are you waiting for</p>
             </div>
             <div class="choose_col">
                 <i class="far fa-smile"></i>
@@ -108,7 +80,6 @@
             </div>
         </div>
     </section>
-
     <section class="facilities">
         <h2>Our Facilities</h2>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
@@ -117,8 +88,8 @@
                 <div class="img_wrapper">
                     <img src="/assets/images/TruckHoome.jpg" alt="TruckPhoto">
                 </div>
-                <h3>What To Do If Your Rental car Me With An Accident </h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>What To Do If Your Rental car Met With An Accident </h3>
+                <p>If your rental car met with an accident here what you have to do...</p>
                 <button type="submit" class="btn">Read More!</button>
             </div>
             <div class="facilities_col">
@@ -126,32 +97,27 @@
                     <img src="/assets/images/motorHome.jpg" alt="MotorPhoto">
                 </div>
                 <h3>On The Trail Of 3 Best Foods In North Africa</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Hey! If you want to experience the best food you can...</p>
                 <button type="submit" class="btn">Read More!</button>
             </div>
             <div class="facilities_col">
                 <div class="img_wrapper">
                     <img src="assets/images/VanHoome.jpg" alt="VanPhoto">
                 </div>
-                <h3>Car Rental Mistakes That Can <br>Cost You Big</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h3>Car Rental Mistakes That Can<br>Cost You Big</h3>
+                <p>Pay attention when you rent a car, because that will cost you big!</p>
                 <button type="submit" class="btn">Read More!</button>
             </div>
         </div>
     </section>
-
     <!--end webpage content-->
 
-
     <!-- footer -->
-
     <footer>
         <div class="row">
             <div class="col">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Deserunt debitis, nisi beatae, ullam repellat et nulla
-                    sapiente facere minima atque, nihil est dolor omnis aut
-                    tempora quia alias tenetur. Inventore?</p>
+                <p>Welcome to our website where you can
+                    find the cheapest car you need to drive today!</p>
             </div>
             <div class="col">
                 <h3>Office <div class="underline"><span></span></div>
@@ -166,8 +132,8 @@
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
-                    <li><a href="">GALLERY</a></li>
-                    <li><a href="">PROMOTION</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="reservation.html">RESERVATION</a></li>
                 </ul>
             </div>
             <div class="col">
@@ -194,6 +160,7 @@
 
 </body>
 
+<script src="./assets/components/header.js"></script>
 <script>
     document.addEventListener('scroll', () => {
         if (window.pageYOffset > 0) {
@@ -205,13 +172,8 @@
         }
     })
 
-    document.querySelector('#times_menu').addEventListener('click',()=>{
-        document.querySelector('.nav_links').classList.remove('navbar_responsive');
-    })
     
-    document.querySelector('.menu_icon').addEventListener('click',()=>{
-        document.querySelector('.nav_links').classList.add('navbar_responsive');
-    })
+
 
 </script>
 
