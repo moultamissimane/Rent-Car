@@ -782,7 +782,7 @@ let htmlCars = [];
 cars.forEach(e=>{
 
     e.name != 'BMW 5-Series 535i Gran Turismo Luxury....jpg' ? htmlCars.push(`
-    <div style="width:15rem;padding:1rem;border-radius:1rem;background-color:white;">
+    <div class="carCard" style="width:15rem;padding:1rem;border-radius:1rem;background-color:white;">
         <div style="background-image: url('${e.image}'); background-size:cover; background-position:center; width:100%; height: 8rem;"></div>
         <p>${e.name.split('.jpg')[0]}</p>
     </div>

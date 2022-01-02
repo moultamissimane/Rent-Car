@@ -182,6 +182,10 @@ footer {
 }
 
 @media (max-width: 800px) {
+
+    .carCard{
+        width: 80% !important;
+    }
    
     footer{
         bottom:unset;
