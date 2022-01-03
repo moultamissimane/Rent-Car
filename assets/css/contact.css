@@ -167,7 +167,8 @@ h2::after{
     min-height: 150px;
 }
 
-/*Footer*/
+/*footer*/
+
 
 footer {
     width: 100%;
@@ -177,127 +178,132 @@ footer {
     line-height: 25px;
     font-family: poppins;
  }
-
-.row {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.col {
-    flex-basis: 25%;
-    padding: 10px;
-}
-
-.col:nth-child(2), .col:nth-child(3){
-    flex-basis: 15%;
-
-}
-
-
-.col h3{
-    width: 80px;
-    margin-bottom: 40px;
-    position: relative;
-}
-.col h4{
+ 
+ .row {
+     width: 80%;
+     margin: auto;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     justify-content: space-between;
+ }
+ 
+ .col {
+     flex-basis: 25%;
+     padding: 1px;
+ }
+ 
+ .col:nth-child(2), .col:nth-child(3){
+     flex-basis: 15%;
+ 
+ }
+ 
+ 
+ .col h3{
+     width: 80px;
+     margin-bottom: 40px;
+     position: relative;
+ }
+ .col h4{
     letter-spacing: 0.1rem;
 }
+ 
+ .email-id{
+     width: fit-content;
+     margin: 20px 0;
+ }
+ 
+ ul li{
+     list-style: none;
+     margin-bottom: 12px;
+    
+     
+ }
+ 
+ ul li a {
+     text-decoration: none;
+     color: #fff;
+ }
+ 
+ form{
+      padding-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: auto;
+ }
+ 
+ form .far{
+     font-size: 18px;
+     margin-right: 10px;
+ }
+ 
+ form input{
+     width: 100%;
+     background: transparent;
+     color: #ccc;
+     border: 0;
+     outline: none;
+     margin: auto;
+     padding-left: 25px;
+     padding-right: 25px;
+ }
+ 
+ form button{
+     background: transparent;
+     border: 0;
+     outline: none;
+     cursor: pointer;
+ }
+ 
+ form button .fas{
+     font-size: 16px;
+     color: #ccc;
+ }
+ 
+ .social-icons .fab{
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 40px;
+     font-size: 20px;
+     color: #000;
+     background: #fff;
+     margin-right: 15px;
+     cursor: pointer; 
+ }
+ 
+ 
+ .copyright{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    font-size: 1rem;
+ }
+ 
+ .underline{
+     width: 100%;
+     height: 5px;
+     background: #0808085e;
+     border-radius: 3px;
+     position: absolute;
+     top: 36px;
+     overflow: hidden;
+ }
+ 
+ 
+ .underline span{
+     width: 15px;
+     height: 100%;
+     background: rgb(0, 87, 169);
+     border-radius: 3px;
+     position: absolute;
+     left: 10px;
+     animation: moving 2s linear infinite;
+ }
 
-.email-id{
-    width: fit-content;
-    margin: 20px 0;
-}
-
-ul li{
-    list-style: none;
-    margin-bottom: 12px;
-}
-
-ul li a {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-form{
-    padding-bottom: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: auto;
-}
-
-form .far{
-    font-size: 18px;
-    margin-right: 10px;
-}
-
-form input{
-    width: 100%;
-    background: transparent;
-    color: #ccc;
-    border: 0;
-    outline: none;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-
-form button{
-    background: transparent;
-    border: 0;
-    outline: none;
-    cursor: pointer;
-}
-
-form button .fas{
-    font-size: 16px;
-    color: #ccc;
-}
-
-.social-icons .fab{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 40px;
-    font-size: 20px;
-    color: #000;
-    background: #fff;
-    margin-right: 15px;
-    cursor: pointer; 
-}
-
-
-.copyright{
-    text-align: center;
-}
-
-.underline{
-    width: 100%;
-    height: 5px;
-    background: #0808085e;
-    border-radius: 3px;
-    position: absolute;
-    top: 36px;
-    overflow: hidden;
-}
-
-
-
-.underline span{
-    width: 15%;
-    height: 100%;
-    background: rgb(0, 87, 169);
-    border-radius: 3px;
-    position: absolute;
-    left: 10px;
-    animation: moving 2s linear infinite;
-}
+/* end footer */
 
 .menu{
     padding: 10px;
@@ -375,10 +381,47 @@ form button .fas{
     .button {
         display:none;
     }
+    #contact{
+        display: block;
+    }
     footer{
         bottom:unset;
     }
-    #contact{
-        display: block;
+    form button{
+        position: relative;
+        right: 3rem;
+    }
+    ul li a{
+        font-family: poppins;
+        font-size: 1rem;
+    }
+    form input{
+        margin: 2rem;
+        position: relative;
+        bottom: 1rem;
+        right: 2.5rem;
+    }
+    .row{
+        flex-direction: column;
+    }
+
+    form{
+        position: relative;
+        bottom: 1rem;
+    }
+
+    form input{
+        position: relative;
+        top: 0.2rem;
+
+    }
+    .copyright{
+        position: relative;
+        right: 2.5rem;
+    }
+
+    .social-icons .fab{
+        position: relative;
+        bottom: 2rem;
     }
 }

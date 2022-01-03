@@ -123,7 +123,10 @@ footer {
  
  
  .copyright{
-     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    font-size: 1rem;
  }
  
  .underline{
@@ -188,8 +191,44 @@ footer {
     .carCard{
         width: 80% !important;
     }
-   
     footer{
         bottom:unset;
+    }
+    form button{
+        position: relative;
+        right: 3rem;
+    }
+    ul li a{
+        font-family: poppins;
+        font-size: 1rem;
+    }
+    form input{
+        margin: 2rem;
+        position: relative;
+        bottom: 1rem;
+        right: 2.5rem;
+    }
+    .row{
+        flex-direction: column;
+    }
+
+    form{
+        position: relative;
+        bottom: 1rem;
+    }
+
+    form input{
+        position: relative;
+        top: 0.2rem;
+
+    }
+    .copyright{
+        position: relative;
+        right: 2.5rem;
+    }
+
+    .social-icons .fab{
+        position: relative;
+        bottom: 2rem;
     }
 }
