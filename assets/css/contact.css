@@ -129,7 +129,7 @@ button:hover {
 
 .right{
     padding: 25px 40px;
-    background: linear-gradient(to right, #346572, #2b4085);
+    background: linear-gradient(to right, #a8aaaa, #727272);
 }
 
 h2{
@@ -149,7 +149,7 @@ h2::after{
     height: 4px;
     width: 50px;
     border-radius: 2px;
-    background-color: #599cf3;
+    background-color: #bcbdbe;
 }
 
 .field{
@@ -284,12 +284,7 @@ footer {
  }
  
  
- .copyright{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-    font-size: 1rem;
- }
+
  
  .underline{
      width: 100%;
@@ -336,7 +331,6 @@ footer {
 }
 
 
-
 @keyframes moving{
     0%{
         left: -20px;
@@ -346,8 +340,6 @@ footer {
         left: 100%;
     }
 }
-
-
 
 @media (max-width:800px){
     .contact-box{
@@ -407,8 +399,8 @@ footer {
     form input{
         margin: 2rem;
         position: relative;
-        bottom: 1rem;
         right: 2.5rem;
+        top: 0.2rem;
     }
     .row{
         flex-direction: column;
@@ -419,15 +411,6 @@ footer {
         bottom: 1rem;
     }
 
-    form input{
-        position: relative;
-        top: 0.2rem;
-
-    }
-    .copyright{
-        position: relative;
-        right: 2.5rem;
-    }
 
     .social-icons .fab{
         position: relative;

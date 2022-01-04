@@ -11,9 +11,11 @@ let header=`
                 <li>
                 <a href="gallery.html">GALLERY</a>
                 </li>
+                <div class="contact-responsive">
                 <li>
                 <a  href="contact.html">CONTACT</a>
                 </li>
+                </div>
                 <i id="times_menu" class="fas fa-times"></i>
             </ul>
         </nav>

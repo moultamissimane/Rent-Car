@@ -38,6 +38,10 @@ header {
     
 }
 
+.contact-responsive{
+    display: none;
+}
+
 .menu{
     padding: 10px;
     font-size: large;
@@ -105,6 +109,11 @@ button:hover {
     .nav_links{
         display: none;
     }
+
+    .contact-responsive{
+        display: block;
+    }
+
     .navbar_responsive{
         width: 100vw;
         height: 100vh;
